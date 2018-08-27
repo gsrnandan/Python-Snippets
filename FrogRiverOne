@@ -1,0 +1,13 @@
+def solution(X, A):
+    # write your code in Python 3.6
+    leaf = set()
+    val = -1
+    index = 0
+    for i in A:
+        leaf.add(i)
+        if len(leaf) == X :
+           val = index
+           break
+        index = index+1
+    
+    return val
